@@ -1,0 +1,10 @@
+      .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+        .nav-link.active {
+            background-color: black;
+            color: white !important;
+        }

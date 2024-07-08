@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Layout</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
   <!-- Top Header -->
-  <header class="bg-primary text-white text-center py-3">
+  <header class="bg-primary text-white text-center py-1">
     <h1>Top Header</h1>
   </header>
 
@@ -19,43 +20,67 @@
       <!-- Left Sidebar -->
       <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
         <div class="position-sticky pt-3">
-          <ul class="nav flex-column">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Overview</span>
+          </h6>
+          <ul class="nav flex-column mb-2" id="sidebarMenu">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link" href="#" data-target="home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link 1</a>
+              <a class="nav-link" href="#" data-target="about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link 2</a>
+              <a class="nav-link" href="#" data-target="photos">Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link 3</a>
+              <a class="nav-link" href="#" data-target="videos">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-target="contact">Contact</a>
+            </li>
+            <!-- ================> bottom registration section ==============> -->
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Registration</span>
+            </h6>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-target="registration">Registration for Mejban</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-target="bemember">Become a Member</a>
             </li>
           </ul>
+
+
+
         </div>
       </nav>
 
       <!-- Main Content -->
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
-          <div>
-            <h2>Main Content</h2>
-            <p>This is the main content area, centered in the middle of the page.</p>
+          <div id="contentArea">
+            <!-- Content will be loaded dynamically here -->
           </div>
         </div>
       </main>
     </div>
   </div>
 
+
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>Footer Content</p>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- script app.js file link up -->
+  <script src="./scripts/app.js"></script>
 </body>
 
 </html>
